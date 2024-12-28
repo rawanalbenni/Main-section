@@ -1,0 +1,163 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+body{
+    width: 100%;
+    aspect-ratio: 1/1;
+    border: #070707 solid 3px;
+    background-image:url(../images/backgroundtask9.jpg);
+    background-size:cover;
+    background-attachment: fixed;
+    background-position: center center;
+
+    font-family: sans-serif;
+ }
+
+nav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: fit-content;
+    padding: 40px;
+}
+
+nav img{
+    position: absolute;
+    top: 30px;
+    left: 150px;
+}
+nav a{
+    position: relative;
+    margin: 0 20px; 
+    color: white; 
+    text-decoration: none; 
+    font-size: small;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+nav a::after{
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: -8px;                        
+            height: 2px;                         
+            background-color: #ce8a2b; 
+            transform: scaleX(0); 
+            transition: transform 0.3s ease; 
+}
+nav .lnks :hover::after{
+    transform: scaleX(1);
+}
+.lnks{
+    position: absolute;
+    top: 40px;
+    left: 550px;
+}
+
+.telcontact{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 10px;
+    left: 1300px;
+    color: #fefdfd;
+    font-size: 12px;
+}
+.telcontact a{
+    color: #ce8a2b;
+    font-size: 16px;
+}
+ main{
+   
+    text-align: center;
+}
+main h1{
+    position: absolute;
+   top: 250px;
+   left: 530px;
+    font-size: 45px;
+    color: #f0f0f0;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+.corner-button {
+    position: relative;
+    padding: 15px 30px;
+    font-size: 16px;
+    color: #fff;
+    background-color:transparent;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+}
+.corner-button::before,
+.corner-button::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    transition: all 0.3s ease;
+}
+.corner-button::before {
+     top: 0;
+    right: 0;
+    border-top: 1px solid #fffefe;
+    border-right: 1px solid #ffffff;
+    border-radius: 2px;
+}
+.corner-button::after {
+    bottom: 0;
+    left: 0; 
+    border-bottom: 1px solid #ffffff;
+    border-left: 1px solid #ffffff;
+    border-radius: 2px;
+}
+.corner-button:hover::before,
+.corner-button:hover::after {
+    width: 100%;
+    height: 100%;
+    border-color: #ffffff;
+}
+.rightbtn{
+    position: absolute;
+    left: 200px;
+    top: 350px;
+}
+.leftbtn{
+    position: absolute;
+    right: 200px;
+    top: 350px;
+}
+.bottom{
+    position: absolute;
+    right: 700px;
+    top: 450px;
+}
+footer{
+    width: 100%;
+    height: fit-content;
+    position: absolute;
+    bottom: 50px;
+    left: 710px;
+
+}
+footer a{
+    text-decoration: none;
+    color: #f0f0f0;
+    font-size: 12px;
+  
+}
+footer .contact{
+    position: absolute;
+    left: 600px;
+}
+footer .contact a{
+    margin: 0 10px;
+}
